@@ -15,8 +15,19 @@ public class AccessTokenDomain extends WeixinJsApiBaseResultDomain {
      */
     private Integer expiresIn;
 
+    /**
+     * 用户自带的参数, 仅支持英文数字. 最大 128 字节
+     */
     private String scope;
+
+    /**
+     * 用户微信唯一标识 (同公众号下)
+     */
     private String openid;
+
+    /**
+     * 刷新 Token
+     */
     private String refreshToken;
 
     public String getScope() {

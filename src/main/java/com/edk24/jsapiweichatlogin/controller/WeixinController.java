@@ -27,19 +27,20 @@ public class WeixinController {
     /**
      * 公众号 appid
      */
-    private String appid = "wx7ff70d35b5590079";
+    private String appid = "你的公众号 Appid";
 
     /**
      * 公众号 appsecret
      */
-    private String appsecret = "12a48d89eeceb2597bda2de4203305c1";
+    private String appsecret = "你的公众号 AppSecret";
 
     @GetMapping("test")
     public void test(HttpServletResponse response) throws IOException {
         // 网页授权后回调地址, 会带 code 参数用于交换 access_token
         String redirect_url = "http://192.168.31.47:8080/weixin/login";
 
-        // snsapi_base 用户无感知, 但不能获取用户信息, snsapi_userinfo 可获取用户信息  需要用户同意授权
+        // snsapi_base 用户无感知, 但不能获取用户信息,
+        // snsapi_userinfo 可获取用户信息  需要用户同意授权
         String scope = "snsapi_userinfo";
 
         // 用户自带的参数, 仅支持英文数字. 最大 128 字节

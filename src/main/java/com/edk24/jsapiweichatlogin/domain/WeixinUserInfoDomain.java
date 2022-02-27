@@ -5,12 +5,39 @@ package com.edk24.jsapiweichatlogin.domain;
  */
 public class WeixinUserInfoDomain {
 
+    /**
+     * 用户微信唯一标识 (同公众号下)
+     */
     private String openid;
+
+    /**
+     * 微信昵称
+     */
     private String nickname;
+
+    /**
+     * 头像地址
+     */
     private String headimgurl;
+
+    /**
+     * 性别
+     */
     private Integer sex;
+
+    /**
+     * 城市
+     */
     private String city;
+
+    /**
+     * 国家
+     */
     private String country;
+
+    /**
+     * 语言
+     */
     private String language;
 
 
